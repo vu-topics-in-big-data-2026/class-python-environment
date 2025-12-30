@@ -1,10 +1,10 @@
-# class-python-environment
+# Class Python Environment
 
-Note that alternatively just use the google colab environment (Infact that is the preferred mechanism)
+Note that alternatively just use the [Google Colab](https://colab.research.google.com/) environment (Infact that is the preferred mechanism)
 
 ## Install Conda
 
-Visit https://www.anaconda.com/products/individual
+Visit [https://www.anaconda.com/products/individual](https://www.anaconda.com/download), you will need to create a free account to be able to download Anaconda.
 
 
 ## Check your environments.
@@ -23,13 +23,15 @@ Create and activate the new environment.
 
 
 ```bash
-conda create --name bigdata python=3.8
+conda create --name bigdata python=3.10
 conda activate bigdata
 ```
 
 Add the packages into the new environment.
 It is tempting [to use pip](
 https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment).
+> Issues may arise when using pip and conda together. When combining conda and pip, it is best to use an isolated conda environment. Only after conda has been used to install as many packages as possible should pip be used to install any remaining software.
+
 It may be that some packages are not available in the main conda repositories for your platform.
 In that case you may need to add additional channels.
 
